@@ -28,3 +28,8 @@ ENV/
 *.swp
 *.swo
 .DS_Store
+
+# MLflow local tracking files
+mlruns/
+mlartifacts/
+*.db

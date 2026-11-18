@@ -17,7 +17,7 @@ uv run ruff check . --fix
 ## uv yaml
 https://docs.astral.sh/uv/guides/integration/github/#publishing-to-pypi
 
-## Generate MLflow
+## Generate MLflow Model
 https://mlflow.org/docs/latest/ml/getting-started/running-notebooks/
 
 ## fastapi
