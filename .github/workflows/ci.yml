@@ -8,18 +8,30 @@ on:
 
 jobs:
   build:
-    name: Lint & Test
+    name: Lint, Test & SonarCloud Scan
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # ★ SonarCloudの正確な解析のために全コミット履歴を取得
 
       - name: Set up uv
         uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
 
       - name: Set up Python & Install dependencies
-        run: uv sync --frozen
+        run: uv sync --frozen --dev
 
-      - name: Run lint check
-        run: uv run ruff check
+      - name: Run lint check (Ruff)
+        run: uv run ruff check .
+
+      - name: Run tests and generate coverage report (Pytest)
+        run: uv run pytest --cov=final_project_mlops --cov-report=xml --cov-report=term
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

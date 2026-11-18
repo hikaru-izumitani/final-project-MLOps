@@ -1,1 +1,30 @@
+# --- Python Bytecode & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# --- Testing & Coverage (pytest & pytest-cov) ---
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+dist/
+build/
+*.egg-info/
+
+# --- Virtual Environments (uv) ---
 .venv/
+env/
+venv/
+ENV/
+.uv/
+
+# --- IDE & OS Specific ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store

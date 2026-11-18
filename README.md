@@ -3,8 +3,25 @@
 ## uv
 https://docs.astral.sh/uv/#installation
 
+
+uv add packagename
+
+exception
+uv add --dev ruff
+uv add --dev pytest
+uv add --dev pytest-cov
+
 ## uv yaml
 https://docs.astral.sh/uv/guides/integration/github/#publishing-to-pypi
 
 ## Generate MLflow
 https://mlflow.org/docs/latest/ml/getting-started/running-notebooks/
+
+## fastapi
+https://fastapi.tiangolo.com/#installation
+
+## pytest
+https://docs.pytest.org/en/stable/
+
+## sonarqube
+https://github.com/marketplace/actions/official-sonarqube-scan
