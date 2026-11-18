@@ -1,4 +1,5 @@
 from fastapi.testclient import TestClient
+
 from final_project_mlops.main import app
 
 client = TestClient(app)
