@@ -11,6 +11,9 @@ uv add --dev ruff
 uv add --dev pytest
 uv add --dev pytest-cov
 
+## ruff
+uv run ruff check . --fix
+
 ## uv yaml
 https://docs.astral.sh/uv/guides/integration/github/#publishing-to-pypi
 
