@@ -28,3 +28,9 @@ https://docs.pytest.org/en/stable/
 
 ## sonarqube
 https://github.com/marketplace/actions/official-sonarqube-scan
+
+
+## SQLAlchemy
+https://docs.sqlalchemy.org/en/21/index.html
+
+https://docs.sqlalchemy.org/en/21/orm/quickstart.html

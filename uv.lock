@@ -930,6 +930,7 @@ dependencies = [
     { name = "numpy" },
     { name = "pandas" },
     { name = "scikit-learn" },
+    { name = "sqlalchemy" },
 ]
 
 [package.dev-dependencies]
@@ -946,6 +947,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.5.5" },
     { name = "pandas", specifier = ">=3.1.1" },
     { name = "scikit-learn", specifier = ">=1.9.1" },
+    { name = "sqlalchemy", specifier = ">=2.1.9" },
 ]
 
 [package.metadata.requires-dev]
